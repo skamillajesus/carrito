@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    text-align: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4d52ff, #864df1);
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 50px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #d1d1d1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 17px;
+    margin-right: 100px;
+
+}
+
+nav ul li ul {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    background: blueviolet;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+
+    opacity: 0;
+    z-index: 10;
+    padding: 15px;
+
+
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+    color: #864df1;
+}
+
+nav ul li ul::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid blueviolet;
+    position: absolute;
+
+    top: -12px;
+    left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #d1d1d1;
+    color: #4d52ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#img {
+
+    width: 400px;
+    height: 400px;
+    padding-top: 5px;
+    margin: 20px auto;
+  
+
+}
